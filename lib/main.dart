@@ -1,4 +1,5 @@
 import 'package:chat_app_firebase/views/sign_in.dart';
+import 'package:chat_app_firebase/views/sign_up.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.black,
         primarySwatch: Colors.blue,
       ),
-      home: SignIn(),
+      home: SignUp(),
     );
   }
 }
