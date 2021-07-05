@@ -26,23 +26,15 @@ class _SignUpState extends State<SignUp> {
               children: [
                 TextField(
                     style: simpleTextStyle(),
+                    decoration: textFieldInputDecoration("user name")),
+                TextField(
+                    style: simpleTextStyle(),
                     decoration: textFieldInputDecoration("email")),
                 TextField(
                     style: simpleTextStyle(),
                     decoration: textFieldInputDecoration("password")),
                 SizedBox(
-                  height: 8.0,
-                ),
-                Container(
-                  alignment: Alignment.centerRight,
-                  padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
-                  child: Text(
-                    "Forgot Password?",
-                    style: simpleTextStyle(),
-                  ),
-                ),
-                SizedBox(
-                  height: 8.0,
+                  height: 16.0,
                 ),
                 Container(
                   padding: EdgeInsets.symmetric(vertical: 16),
@@ -56,7 +48,7 @@ class _SignUpState extends State<SignUp> {
                       )),
                   width: MediaQuery.of(context).size.width,
                   child: Text(
-                    "Sign In",
+                    "Sign Up",
                     style: biggerTextStyle(),
                     textAlign: TextAlign.center,
                   ),
@@ -71,7 +63,7 @@ class _SignUpState extends State<SignUp> {
                       color: Colors.white),
                   width: MediaQuery.of(context).size.width,
                   child: Text(
-                    "Sign In with Google",
+                    "Sign Up with Google",
                     style: TextStyle(color: Colors.black),
                     textAlign: TextAlign.center,
                   ),
@@ -83,11 +75,11 @@ class _SignUpState extends State<SignUp> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Don't have account? ",
+                      "Already have an account? ",
                       style: simpleTextStyle(),
                     ),
                     Text(
-                      "Register now",
+                      "Sign In",
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 16,
