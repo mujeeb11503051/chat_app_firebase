@@ -14,7 +14,23 @@ class _SignInState extends State<SignIn> {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(60.0), child: appBarMain(context),
-        
+      ),
+      body: Container(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24),
+          child: Column(
+            children: [
+              TextField(
+                style: simpleTextStyle(),
+                decoration: textFieldInputDecoration("email")
+              ),
+              TextField(
+                  style: simpleTextStyle(),
+                  decoration: textFieldInputDecoration("password")
+              ),
+            ],
+          ),
+        ),
       ),
 
     );
