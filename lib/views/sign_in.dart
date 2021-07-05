@@ -73,6 +73,28 @@ class _SignInState extends State<SignIn> {
                   textAlign: TextAlign.center,
                 ),
               ),
+              SizedBox(
+                height: 16,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Don't have account? ",
+                    style: simpleTextStyle(),
+                  ),
+                  Text(
+                    "Register now",
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        decoration: TextDecoration.underline),
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 50,
+              )
             ],
           ),
         ),
