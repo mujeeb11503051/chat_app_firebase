@@ -22,4 +22,15 @@ class AuthMethods{
     }
   }
 
+  //sign up with emil and password
+  Future signUpWithEmailAndPassword(String email, String password) async{
+    try{
+      UserCredential result = await _auth.createUserWithEmailAndPassword(email: email, password: password);
+      User? firebaseUser = result.user;
+      return _userFromFirebaseUser(firebaseUser!);
+    }catch(e){
+      print(e.toString());
+    }
+  }
+
 }
